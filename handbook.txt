@@ -1,0 +1,23 @@
+﻿Git Commands:
+git log -a //显示所有日志
+git reset soft HEAD~1 //回滚到上一次commit，此时上一次add还未撤销
+git reset --mixed //撤销上次add，随后可以重新add && commit then push
+git rm --cached <filename> //删除缓存仓库中某个文件
+
+
+ubuntu操作：
+添加环境变量：
+	1. vim ~/.bashrc 
+	2. 在文件末尾添加路径： example: export PATH=~/dependency/kenlm/build/bin:$PATH
+	3. source ~/.bashrc //加载一下
+	4. 查看已添加环境变量，使用“：”隔开：echo $PATH 
+寻找文件地址：which <filename>
+打印pip包路径：pip2 show <package name>
+
+操作远程ssh终端：
+source activate <env name> //激活某python环境
+cat /usr/local/cuda/version.txt //查看CUDA版本
+
+Win Commands:
+将test1中文件夹复制到test2中： xcopy d:\test1  d:\test2 /T /E
+
