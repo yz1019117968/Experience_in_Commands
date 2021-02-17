@@ -31,6 +31,9 @@ Win Commands:
                   cd %%i 
                   ren *.txt *.sol
                  )
+查看当前文件夹下全部文件： dir /a *
+删除某个文件： del <file name>
+
 pytorch 查看cuda, cudnn版本:
 	import torch
 	print(torch.__version__)
