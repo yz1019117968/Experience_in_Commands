@@ -1,9 +1,12 @@
 ﻿Git Commands:
 git log -a //显示所有日志
+/*对于错误add 还未commit*/
+git rm <-r, recursive>--cached "文件路径"，不删除物理文件，仅将该文件从缓存中删除；
+git rm --f  "文件路径"，不仅将该文件从缓存中删除，还会将物理文件删除（不会回收到垃圾桶）。
 /* 对于错误commit，还未push */
 1. git reset soft HEAD~1 //回滚到上一次commit，此时上一次add还未撤销
 2. git reset --mixed //撤销上次add，随后可以重新add && commit then push
-git rm --cached <filename> //删除缓存仓库中某个文件
+
 
 
 ubuntu操作：
