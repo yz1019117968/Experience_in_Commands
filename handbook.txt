@@ -6,6 +6,9 @@ git rm --f  "文件路径"，不仅将该文件从缓存中删除，还会将物
 /* 对于错误commit，还未push */
 1. git reset soft HEAD~1 //回滚到上一次commit，此时上一次add还未撤销
 2. git reset --mixed //撤销上次add，随后可以重新add && commit then push
+/* 修改和查看远程仓库地址 */
+git remote -v
+git remote set-url origin <remote url>
 
 
 
